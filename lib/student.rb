@@ -2,7 +2,14 @@ require 'pry'
 
 class Student
 
-  def hello 
+  attr_accessor :name
+
+  def initialize (name)
+    @name = name
+  end
+
+  def hello (str = 'hold')
+    puts str
     puts "Hey there! I'm so excited to learn stuff."
   end
 
